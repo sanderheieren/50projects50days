@@ -17,7 +17,7 @@ body {
   align-items: center;
   height: 100vh;
   justify-content: center;
-  overflow: hidden; /* sjekke når du tar bort denne etterpå*/
+  overflow: hidden;
 }
 
 .container {
