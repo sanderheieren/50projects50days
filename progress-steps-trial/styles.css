@@ -64,6 +64,7 @@ body {
 }
 
 .circle.active {
+  transition: border-color 0.5s ease-in;
   border-color: var(--line-border-fill);
 }
 .btn {
