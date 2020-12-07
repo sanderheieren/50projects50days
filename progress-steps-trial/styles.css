@@ -41,53 +41,41 @@ body {
 }
 .progress {
   height: 4px;
+  position: absolute;
   bottom: 50%;
   z-index: -1;
   width: 0%;
   transform: translateY(50%);
-  position: absolute;
   background-color: var(--line-border-fill);
   transition: width 0.4s ease;
 }
-/* .progress::before {
-  content: "";
-  height: 4px;
-  z-index: -1;
-  bottom: 50%;
-  width: 15%;
-  transform: translateY(50%);
-  position: absolute;
-  left: 0;
-  background-color: var(--line-border-fill);
-} */
+
 .circle {
   background-color: #fff;
+  color: #999;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 5px;
-  border: 3px solid lightgrey;
+  height: 40px;
+  width: 40px;
+  border: 3px solid var(--line-border-empty);
 }
 
 .circle.active {
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 3px;
-  border: 3px solid var(--line-border-fill);
-  transition: border 0.4s ease 0.1s;
+  border-color: var(--line-border-fill);
 }
 .btn {
   background-color: var(--line-border-fill);
   font-size: 18px;
   color: white;
   border-radius: 5px;
-  padding: 5px;
+  padding: 5px 25px;
   font-family: inherit;
   cursor: pointer;
   margin: 5px;
+  border: 0;
 }
 .btn:active {
   transform: scale(0.95);
