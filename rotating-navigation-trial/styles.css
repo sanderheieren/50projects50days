@@ -72,22 +72,42 @@ h2 {
 small {
   font-style: italic;
 }
-
-nav ul li {
+.container.show-nav + nav li {
+  transform: translateX(50%);
+  transition-delay: 0.3s;
+}
+nav {
   position: fixed;
+  z-index: 100;
+  left: 0;
+  bottom: 40px;
 }
 li {
   list-style-type: none;
-  color: white;
+  color: red;
   font-size: 22px;
+}
+nav ul li {
+  transform: translateX(-100%);
+  margin: 40px 0;
+  transition: transform 0.4s ease-in;
 }
 ul li + li {
   margin-left: 15px;
+  transform: translateX(-150%);
 }
 ul li + li + li {
   margin-left: 30px;
+  transform: translateX(-200%);
 }
 img {
   width: 100%;
   height: auto;
+}
+nav ul {
+  padding-right: 40px;
+}
+.container.show-nav + nav li {
+  transform: translateX(0);
+  transition-delay: 0.3s;
 }
