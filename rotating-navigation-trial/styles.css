@@ -12,8 +12,82 @@ body {
   overflow-x: hidden;
 }
 .container {
-  background-color: #fff;
+  background-color: #fafafa;
+  transition: transform 0.5s linear;
+  transform-origin: top left;
+  /* width: 100vw;
+  min-height: 100vh; */
 }
-.container {
-  transform: translateY(-20deg);
+.container.show-nav {
+  transform: rotate(-20deg);
+}
+.content {
+  padding: 100px 70px;
+  max-width: 1000px;
+}
+.circle-container {
+  position: fixed;
+  left: -100px;
+  top: -100px;
+}
+.circle {
+  background-color: red;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  position: relative;
+  transition: transform 0.5s linear;
+}
+.container.show-nav .circle {
+  transform: rotate(-70deg);
+}
+.circle button {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  font-size: 28px;
+  position: absolute;
+}
+.circle #open {
+  top: 65%;
+  left: 60%;
+}
+.circle #close {
+  top: 60%;
+  left: 15%;
+}
+button:focus {
+  outline: none;
+}
+
+p {
+  line-height: 1.4;
+  color: #333;
+}
+h2 {
+  margin: 0;
+  font-size: 26px;
+  transition: transform 0.5s linear;
+}
+small {
+  font-style: italic;
+}
+
+nav ul li {
+  position: fixed;
+}
+li {
+  list-style-type: none;
+  color: white;
+  font-size: 22px;
+}
+ul li + li {
+  margin-left: 15px;
+}
+ul li + li + li {
+  margin-left: 30px;
+}
+img {
+  width: 100%;
+  height: auto;
 }
