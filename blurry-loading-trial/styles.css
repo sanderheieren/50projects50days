@@ -27,7 +27,6 @@ body {
   position: absolute;
   left: 50%;
   top: 50%;
-  opacity: 100;
 }
 img {
   width: calc(100% + 30px);
