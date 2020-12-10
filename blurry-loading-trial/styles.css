@@ -7,9 +7,31 @@
 body {
   font-family: "Roboto", sans-serif;
   margin: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   height: 100vh;
+  max-width: 100vw;
+  overflow-y: hidden;
+}
+.container {
+  display: flex;
   justify-content: center;
+  align-items: center;
+  width: 60%;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+}
+
+.loading-text {
+  color: white;
+  font-size: 40px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  opacity: 100;
+}
+img {
+  width: calc(100% + 30px);
+  height: calc(auto + 30px);
+  object-fit: cover;
+  filter: blur(0px);
 }
