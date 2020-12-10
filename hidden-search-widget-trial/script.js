@@ -4,8 +4,6 @@ const form = document.querySelector('.form')
 const input = document.querySelector('.input')
 
 btn.addEventListener('click', (e) => {
-  e.stopPropagation();
-  e.preventDefault();
   console.log(input.value);
   search.classList.toggle('active');
   input.focus();
