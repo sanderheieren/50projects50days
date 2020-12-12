@@ -10,10 +10,24 @@
       integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
       crossorigin="anonymous"
     />
-    <title>My Project</title>
+    <title>Form Input Wave</title>
   </head>
   <body>
-    <h1>Project Starter</h1>
+   <div class="container">
+     <h1>Please Login</h1>
+     <form action="#">
+       <div class="form-control">
+         <input autocomplete="off" id="email" name="email" type="email" required>
+         <label for="email">Email</label>
+       </div>
+      <div class="form-control">
+        <input type="password" required>
+        <label for="password" id="password" name="password">Password</label>
+      </div>
+      <button class="btn">Login</button>
+      <p class="text">Don't have an account? <a href="#">Register</a></p>
+     </form>
+   </div>
 
     <script src="script.js"></script>
   </body>
