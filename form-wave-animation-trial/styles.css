@@ -1,15 +1,95 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Muli", sans-serif;
   margin: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   height: 100vh;
+  display: flex;
   justify-content: center;
+  align-items: center;
+  background-color: steelblue;
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  color: white;
+  width: 400px;
+}
+.container h1 {
+  text-align: center;
+}
+.form-group {
+  position: relative;
+  margin: 4rem 2rem;
+}
+.form-group label {
+  position: absolute;
+  left: 0;
+  bottom: 20px;
+  font-size: 1.25rem;
+}
+
+.form-group input:focus + label span {
+  transform: translateY(-30px);
+}
+
+.form-group label span {
+  display: inline-block;
+  bottom: 40px;
+  transition: 0.4s cubic-bezier(0.68, -0.2, 0.265, 1.55);
+}
+
+/* .form-group input:focus + label span {
+  transform: translateY(-30px);
+} */
+
+.form-group input {
+  background: transparent;
+  border: 0;
+  display: block;
+  border-bottom: solid 1px white;
+  width: 100%;
+  color: #fff;
+  font-size: 1.25rem;
+}
+.form-group input:focus {
+  outline: 0;
+  border-bottom-color: lightblue;
+}
+
+/* .form-group input:focus + label {
+  bottom: 30px;
+  background-color: red;
+} */
+
+.btn {
+  width: 100%;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 0;
+  border-radius: 0.5rem;
+  color: inherit;
+  font-size: 1.5rem;
+  font-family: inherit;
+  cursor: pointer;
+}
+.btn:active {
+  transform: scale(0.98);
+  outline: 0;
+}
+.btn:focus {
+  outline: 0;
+}
+.container a {
+  text-decoration: none;
+  color: steelblue;
+}
+.text {
+  text-align: center;
 }
