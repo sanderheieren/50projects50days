@@ -12,4 +12,28 @@ body {
   align-items: center;
   height: 100vh;
   justify-content: center;
+  background-color: steelblue;
+}
+/* #buttons {
+  display: flex;
+  flex-wrap: wrap;
+} */
+#buttons button {
+  margin: 5px 20px;
+  border: 0;
+  padding: 15px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: lightcyan;
+  font-size: 20px;
+}
+#buttons button:active,
+#buttons button:focus {
+  outline: none;
+}
+#buttons button:active {
+  transform: scale(0.98);
+}
+#buttons button:hover {
+  background-color: lightblue;
 }
