@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Muli", sans-serif;
   margin: 0;
   display: flex;
   align-items: center;
@@ -24,9 +24,10 @@ body {
   position: relative;
   background-color: #fff;
   border-radius: 5px;
-  font-size: 24px;
-  width: 100px;
-  text-align: center;
+  font-size: 20px;
+  min-width: 150px;
+  justify-content: center;
+  font-weight: bold;
 }
 .event small {
   position: absolute;
@@ -35,7 +36,7 @@ body {
   color: #fff;
   text-align: center;
   width: 100%;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .btn {
