@@ -21,6 +21,7 @@ h1 {
 }
 .container {
   width: 90%;
+  z-index: 1;
 }
 .faq-container {
   border: 1px solid white;
@@ -30,10 +31,31 @@ h1 {
   border-radius: 6px;
   transition: 0.3s ease;
   position: relative;
+  overflow: hidden;
 }
 .faq-container.active {
-  box-shadow: 3px 6px 6px 6px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 3px 6px rgba(255, 255, 255, 0.1),
+    0 3px 6px rgba(255, 255, 255, 0.1);
   background-color: rgb(78, 78, 78);
+}
+
+.faq-container.active::before,
+.faq-container.active::after {
+  content: "\f075";
+  font-family: "Font Awesome 5 Free";
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  opacity: 0.54;
+  color: green;
+  z-index: 0;
+  font-size: 7rem;
+}
+.faq-container.active::before {
+  color: blue;
+  left: -25px;
+  top: -10px;
+  transform: rotateY(180deg);
 }
 .faq-container.active .faq-answer {
   display: block;
@@ -44,6 +66,7 @@ h1 {
 .faq-container .faq-answer {
   display: none;
 }
+
 .faq-container .buttons {
   position: absolute;
   right: 45px;
