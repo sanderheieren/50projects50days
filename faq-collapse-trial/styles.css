@@ -1,15 +1,77 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Muli", sans-serif;
   margin: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 100vh;
-  justify-content: center;
+  width: 100vw;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+h1 {
+  text-align: center;
+}
+.container {
+  width: 90%;
+}
+.faq-container {
+  border: 1px solid white;
+  margin: 20px auto;
+  max-width: 650px;
+  padding: 15px 25px;
+  border-radius: 6px;
+  transition: 0.3s ease;
+  position: relative;
+}
+.faq-container.active {
+  box-shadow: 3px 6px 6px 6px rgba(255, 255, 255, 0.1);
+  background-color: rgb(78, 78, 78);
+}
+.faq-container.active .faq-answer {
+  display: block;
+}
+.faq-text {
+  margin-right: 50px;
+}
+.faq-container .faq-answer {
+  display: none;
+}
+.faq-container .buttons {
+  position: absolute;
+  right: 45px;
+  top: 30px;
+}
+
+.buttons .fas {
+  cursor: pointer;
+  font-size: 20px;
+}
+.faq-container.active .fa-times {
+  display: block;
+  color: #333;
+  background-color: #fff;
+  padding: 7px;
+  border: 0;
+  box-shadow: 3px 3px 5px 2px rgba(250, 250, 250, 0.1);
+  border-radius: 50%;
+}
+.faq-container .fa-times {
+  display: none;
+}
+.faq-container.active .fa-chevron-down {
+  display: none;
+}
+.faq-container .fa-chevron-down {
+  display: block;
+}
+.buttons .fas {
+  position: absolute;
 }
