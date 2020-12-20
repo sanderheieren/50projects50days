@@ -15,6 +15,8 @@ counters.forEach(counter => {
       innerValue += Math.ceil(increment);
       counter.innerText  = innerValue;
       setTimeout(updateCounter, 1);
+    } else {
+      counter.innerText = target;
     }
 
   }
