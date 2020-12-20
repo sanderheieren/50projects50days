@@ -39,6 +39,7 @@ body {
 }
 .counter-container p {
   margin-top: 10px;
+  white-space: nowrap;
 }
 
 @media (max-width: 580px) {
