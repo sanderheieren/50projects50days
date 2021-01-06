@@ -10,10 +10,35 @@
       integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
       crossorigin="anonymous"
     />
-    <title>My Project</title>
+    <title>Github Profiles</title>
   </head>
   <body>
-    <h1>Project Starter</h1>
+    <form class="user-form" id="form">
+      <input type="text" placeholder="Search a Github User" id="search">
+    </form>
+
+    <main id="main">
+      <div class="card">
+        <div>
+          <img src="https://randomuser.me/api/portraits/men/30.jpg" alt="avatar" class="avatar">
+        </div>
+      
+        <div class="user-info">
+          <h2>John Doe</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, vitae!</p>
+          <ul>
+            <li>300 <strong>Followers</strong></li>
+            <li>100 <strong>Following</strong></li>
+            <li>30 <strong>Repos</strong></li>
+          </ul>
+          <div id="repos">
+            <a href="" class="repo">Repo 1</a>
+            <a href="" class="repo">Repo 2</a>
+            <a href="" class="repo">Repo 3</a>
+          </div>
+        </div>
+      </div>
+    </main>
 
     <script src="script.js"></script>
   </body>
