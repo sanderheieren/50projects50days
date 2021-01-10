@@ -1,15 +1,81 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100vh;
-  justify-content: center;
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100vh;
+	justify-content: center;
+}
+
+.toggle-container {
+	display: flex;
+	align-items: center;
+	margin: 10px 0;
+	width: 200px;
+}
+
+.toggle {
+	visibility: hidden;
+}
+.label {
+	width: 80px;
+	height: 40px;
+	background-color: #d0d0d0;
+	border-radius: 50px;
+	cursor: pointer;
+	display: inline-block;
+	margin: 0 15px 0;
+	position: relative;
+}
+
+.toggle:checked + .label {
+	background-color: rgba(75, 140, 194, 0.8);
+}
+
+.ball {
+	background-color: #fff;
+	width: 34px;
+	height: 34px;
+	border-radius: 50%;
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	align-items: center;
+	justify-content: center;
+	animation: slideOff 0.4s linear forwards;
+}
+
+.toggle:checked + .label .ball {
+	animation: slideOn 0.4s linear forwards;
+}
+
+@keyframes slideOn {
+	0% {
+		transform: translateX(0) scale(1);
+	}
+	50% {
+		transform: translateX(20px) scale(1.2);
+	}
+	100% {
+		transform: translateX(40px) scale(1);
+	}
+}
+
+@keyframes slideOff {
+	0% {
+		transform: translateX(40px) scale(1);
+	}
+	50% {
+		transform: translateX(20px) scale(1.2);
+	}
+	100% {
+		transform: translateX(0) scale(1);
+	}
 }
