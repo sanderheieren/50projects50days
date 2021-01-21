@@ -73,7 +73,7 @@ body {
 
 .box::after {
 	content: '';
-	background-color: rgb(142, 40, 42);
+	background-color: rgba(142, 40, 42, 0.9);
 	position: absolute;
 	top: 8px;
 	right: -15px;
@@ -84,7 +84,7 @@ body {
 
 .box::before {
 	content: '';
-	background-color: rgba(142, 40, 42, 0.9);
+	background-color: rgb(142, 40, 42);
 	position: absolute;
 	bottom: -15px;
 	left: 8px;
